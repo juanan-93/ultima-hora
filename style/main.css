@@ -9,9 +9,11 @@ body{
 ==========header==========
 =========================== */
 header{
-    
+    height: 5em;
     background-color: #e6e6e6;
 }
+
+/* ================================ */
 
 .navegador-lineal{
     height: 3vh;
@@ -26,7 +28,6 @@ header{
 }
 .noticias p {
     margin-top: 0.3em;
-    white-space: nowrap;
     color: #cd0000;
 }
 
@@ -57,17 +58,22 @@ header{
 .islas ul li{
     margin-left: 1em;
 }
+
+/* ============================= */
+
 .navegador-menu{
     display: flex;
     background-color: #cd0000;
     height: 12vh;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .navegador-menu .hamburguesa{
     width:3em;
-    margin-left: 10em;
+    height:3em;
+    margin-left: 6em;
     margin-top: 2em;
-
 }
 
 .navegador-menu .hamburguesa svg path{
@@ -76,15 +82,73 @@ header{
 
 .navegador-menu .logo{
     width: 20em;
-    margin:2em 17em;
+    height:4em;
+    margin-left: 5em;
+    margin-top: 1.5em;
     fill: #ffffff;
 }
 
-.navegador-menu .botones .inicio{
+.botones{
+    display: flex;
+    margin-right: 5em;
+    margin-top: 3em;
+}
+
+.botones .inicio{
+    width: 9em;
+    height: 2.5em;
+    margin:0 0.5em ;
+    background-color: #E6E6E6;
+    border-radius:0.2em 0.2em 0.2em ;
+}
+
+.botones .registro{
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    height: 2.5em;
+    width: 6em;
     background-color: #FFC700;
 }
 
-  
+.navegador-menu .botones .registro p{
+    padding: 0.6em 1em;
+}
+
+.navegador-menu .botones .inicio p{
+    padding: 0.6em ;
+}
+
+.navegador-menu .botones .inicio svg{
+    width: 2em;
+    height: auto;
+    position: absolute;
+    right:12em;
+    top: 5em;
+}
+/* ================================== */
+
+.navegador .navegador-menu-extendido{
+    background-color:#E6E6E6;
+    height: 4vh;
+}
+
+.navegador .navegador-menu-extendido ul{
+ display: flex;
+}
+
+.navegador .navegador-menu-extendido ul li{
+    margin: 0.2em 0.5em;
+}
+
+.navegador .navegador-menu-extendido ul .casa svg {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.navegador .navegador-menu-extendido ul .lupa svg{
+    height: 1em;
+    width: 1em;
+}
+
 /* =====================
 ===========MAIN=========
 ======================== */
