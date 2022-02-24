@@ -8,138 +8,132 @@ body{
 /* =====================
 ==========header==========
 =========================== */
-header{
-    height: 5em;
+/* header{
     background-color: #e6e6e6;
+} */
+
+/* =====================
+==========image==========
+=========================== */
+img{
+    width: 100%;
 }
 
-/* ================================ */
+/* Header */
 
 .navegador-lineal{
-    height: 3vh;
+    background-color: hsl(0, 0%, 90%);
+    display: flex; 
+    justify-content: space-between;
+    padding: 0.2em 3%;
+    width: 94%;
 }
 
 .noticias{
-    height: 3vh;
     display: flex;
-    margin-left: 5em;
-    text-align: center;
-    
 }
+
 .noticias p {
     margin-top: 0.3em;
     color: #cd0000;
+    white-space: nowrap;
 }
 
 .noticias-del-dia ul{
     display: flex;
-    margin-left: 0.5em;
-    white-space: nowrap;
-    margin-top: 0.3em;
 }
 
 .noticias-del-dia ul li{
-    margin: 0 0.06em;
+    margin-right: .5em;
 }
 
-.islas{
-    margin: 0em 5em;
+.noticias-del-dia ul li:first-child{
+    color: #cd0000;
 }
- 
+
+.noticias-del-dia ul li:not(:first-child):not(:last-child)::after {
+    padding-left: 0.25rem;
+    content: "-";
+}
 
 .islas ul{
     display: flex;
-    margin-left: 20em;
-    white-space: nowrap; 
-    margin-top: 0.3em;
-    text-align: center; 
+    justify-content: space-between;
 }
 
 .islas ul li{
     margin-left: 1em;
 }
 
-/* ============================= */
+.islas ul li:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.5rem;
+    color: hsl(0, 0%, 67%);
+    font-weight: bold;
+}
 
 .navegador-menu{
     display: flex;
     background-color: #cd0000;
-    height: 12vh;
-    flex-direction: row;
     justify-content: space-between;
+    padding: 1em 3%;
+    width: 94%;
 }
 
-.navegador-menu .hamburguesa{
+.navegador-menu .hamburguesa svg{
     width:3em;
     height:3em;
-    margin-left: 6em;
-    margin-top: 2em;
 }
 
 .navegador-menu .hamburguesa svg path{
     fill: #ffffff;
 }
 
-.navegador-menu .logo{
-    width: 20em;
-    height:4em;
-    margin-left: 5em;
-    margin-top: 1.5em;
+.navegador-menu .logo svg{
+    height: 3em;
     fill: #ffffff;
 }
 
-.botones{
-    display: flex;
-    margin-right: 5em;
-    margin-top: 3em;
+.navegador-menu .botones button{
+    border: none;
 }
 
-.botones .inicio{
-    width: 9em;
-    height: 2.5em;
-    margin:0 0.5em ;
+.navegador-menu .botones .inicio{
+    margin: 0 0.5em;
     background-color: #E6E6E6;
-    border-radius:0.2em 0.2em 0.2em ;
+    border-radius: 0.2em;
 }
 
-.botones .registro{
-    border-radius: 0.2em 0.2em 0.2em 0.2em;
-    height: 2.5em;
-    width: 6em;
-    background-color: #FFC700;
-}
-
-.navegador-menu .botones .registro p{
-    padding: 0.6em 1em;
-}
-
-.navegador-menu .botones .inicio p{
-    padding: 0.6em ;
+.navegador-menu .botones .inicio span{
+    display: inline;
+    margin-right: 0.5em;
+    vertical-align: middle;
 }
 
 .navegador-menu .botones .inicio svg{
+    vertical-align: middle;
+    overflow: hidden;
     width: 2em;
-    height: auto;
-    position: absolute;
-    right:12em;
-    top: 5em;
 }
-/* ================================== */
+
+.navegador-menu .botones .registro{
+    border-radius: 0.2em;
+    background-color: #FFC700;
+    padding: 0.5em 1em;
+}
 
 .navegador .navegador-menu-extendido{
     background-color:#E6E6E6;
-    height: 4vh;
 }
 
 .navegador .navegador-menu-extendido ul{
- display: flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 3%;
+    width: 94%;
 }
 
-.navegador .navegador-menu-extendido ul li{
-    margin: 0.2em 0.5em;
-}
-
-.navegador .navegador-menu-extendido ul .casa svg {
+.navegador .navegador-menu-extendido ul .casa svg{
     height: 1.5em;
     width: 1.5em;
 }
@@ -153,11 +147,118 @@ header{
 ===========MAIN=========
 ======================== */
 
-
 main{
     margin: 1em 0;
     width: 100%;
 }
+
+.primera-plana{
+    position: relative;
+    top: 3.9em;
+}
+
+.primera-plana .etiqueta{
+
+
+}
+
+.primera-plana .etiqueta img{
+    width: 100%;
+}
+
+.primera-plana .columna .imagen{
+    position: relative;
+    bottom: 29em;
+    left: 5em
+}
+
+.primera-plana .columna .texto-columna{
+    position: relative;
+    left: 11.5em;
+    bottom: 29.5em;
+}
+
+.primera-plana .columna .sub-columna{
+    position: relative;
+    left: 19.6em;
+    bottom: 29em;
+}
+
+.primera-plana .columna .sub-columna-dos{
+    position: relative;
+    left: 36em;
+    bottom: 28em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(0, 0%, 0%);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto";
+}
+
+h5, h6 {
+    font-family: "Roboto";
+}
+
+a, td, p, button, li{
+    font-family: "Roboto";
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h4 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:focus, a:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+}
+
+
 
 
 
