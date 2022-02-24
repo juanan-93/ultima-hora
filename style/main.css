@@ -152,43 +152,6 @@ main{
     width: 100%;
 }
 
-.primera-plana{
-    position: relative;
-    top: 3.9em;
-}
-
-.primera-plana .etiqueta{
-
-
-}
-
-.primera-plana .etiqueta img{
-    width: 100%;
-}
-
-.primera-plana .columna .imagen{
-    position: relative;
-    bottom: 29em;
-    left: 5em
-}
-
-.primera-plana .columna .texto-columna{
-    position: relative;
-    left: 11.5em;
-    bottom: 29.5em;
-}
-
-.primera-plana .columna .sub-columna{
-    position: relative;
-    left: 19.6em;
-    bottom: 29em;
-}
-
-.primera-plana .columna .sub-columna-dos{
-    position: relative;
-    left: 36em;
-    bottom: 28em;
-}
 
 
 
