@@ -152,6 +152,14 @@ main{
     width: 100%;
 }
 
+.noticias{
+    display: flex;
+}
+
+.noticias .columna-slider{
+    
+}
+
 
 
 
